@@ -1,0 +1,116 @@
+{% extends 'basic/base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <section>
+        <div class="container align-items-center content">
+            <div class="row content-first">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <div ><img src = "{% static 'img/home/benefit.png' %}" alt = ""></div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Learn awesome tech</h3>
+                    <p>You will learn about progamming language, such as Python and Javascript, build back-end apps using Flask framework with microservice concept, build client-site apps using React library, etc.</p>
+                </div>
+                <div class="col-md-1"></div>    
+            </div>
+            <div class="row content-second">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <div ><img src = "{% static 'img/home/search-job.png' %}" alt = ""></div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Land new job</h3>
+                    <p>If you can pass this awesome program, you will be part of our reliable tech team for especially Software Engineer position and other tech position such as Quality Engineer, System Analyst, etc.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row content-third">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <div ><img src = "{% static 'img/home/get-paid.png' %}" alt = ""></div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Get paid to learn</h3>
+                    <p>Join for free and earn some money. Yes you read that right, no registration fee required to enter this program. To make things even better, you will receive pocket money just for participating. Cool, right?</p>
+                </div>
+                <div class="col-md-1"></div>    
+            </div>
+            <div class="row content-forth">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <div><img src = "{% static 'img/home/mission.png' %}" alt = ""></div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Who are we?</h2>
+                    <p>Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) to learn within 3 months of being a proffesional tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia.</p></br>
+                    <h2>What is our mission?</h2>
+                    <p>We want to improve capability Tech Talent in Indonesia.</p>
+                </div>
+                <div class="col-md-1"></div>    
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container align-items-center">
+            <div class="row align-items-center justify-content-center">
+                <h3>What will you learn?</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <div class="content-html">
+                        <img src = "{% static 'img/home/learn-html.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="content-python">
+                    <img src = "{% static 'img/home/learn-programming.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="content-git">
+                    <img src = "{% static 'img/home/learn-git.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="content-restapi">
+                    <img src = "{% static 'img/home/learn-api.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <div class="content-react">
+                        <img src = "{% static 'img/home/learn-react.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="content-tdd">
+                    <img src = "{% static 'img/home/learn-tdd.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="content-server">
+                    <img src = "{% static 'img/home/learn-server.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="content-scrum">
+                    <img src = "{% static 'img/home/learn-scrum.png' %}" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+{% endblock  %}

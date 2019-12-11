@@ -1,0 +1,30 @@
+<header class="border-bottom fixed-top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3 col-12 col-sm-3 align-items-center">
+                <span> Alpha Tech Academy </span>
+            </div>
+            <div class="col-md-9 col-12 col-sm-9 d-flex justify-content-end">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav mr-auto nav-mobile">
+                        <li class="nav-item font-weight-bold">
+                            <a href="{% url 'basic:index' %}" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'basic:blog' %}" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'basic:mentor' %}" class="nav-link">Mentor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'basic:mentee' %}" class="nav-link">Mentee</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href="{% url 'basic:author' %}" class="nav-link">Author</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

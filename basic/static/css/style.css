@@ -1,0 +1,212 @@
+/* HEADER STYLE */
+
+header{
+    padding: 10px 0px;
+    background-color: white;
+    box-shadow: 0px 2px 4px gray;
+    /* font-family: Muli; */
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+nav li{
+    margin-left: 15px;
+}
+
+.nav-link{
+    color: #19345E;
+}
+
+.nav-link:hover{
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    20%{color: #3d45b4}
+    40%{color: #66b3d7}
+    50%{color: #12e6df}
+    80%{color: #3888e4}
+}
+
+.active{
+    color: #F47522;
+}
+
+/* MENU */
+
+.menu-head{
+    margin-top: 62px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #39bcc5;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-title{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+/* SECTION CONTENT */
+
+.content{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content-first{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-second{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-third{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-forth{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.content-html, .content-git, .content-python, .content-react, .content-tdd, .content-server, .content-scrum{
+    border: 1px solid #eeeeee;
+    border-radius: 10%;
+    height: 150px;
+    width: 185px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-restapi{
+    border: 1px solid #eeeeee;
+    border-radius: 10%;
+    height: 150px;
+    width: 185px;
+    padding-top: 65px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* BLOG CONTENT */
+
+.blog-content-first{
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.blog-content-second span{
+    font-size: 12px;
+}
+
+.blog-content-third p{
+    font-size: 13px;
+}
+
+.form{
+    margin-top: 50px;
+}
+
+/* MENTOR CONTENT */
+
+.mentor-content{
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mentor-content-first{
+    margin-top: 30px;
+}
+
+/* MENTEE CONTENT */
+
+.mentee-content{
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mentee-content-first{
+    margin-top: 30px;
+}
+
+/* AUTHOR CONTENT */
+
+.author-content{
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.author-content-first{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-content-second h4{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.author-content-map{
+    margin-top: 20px;
+}
+/* FOOTER */
+
+.footer-atas{
+    background-color: #39bcc5;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.footer-socmed-list li{
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.footer-bawah{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-tulisan{
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    color: white;
+}
+
+/* INPUT */
+
+.input{
+    margin-top: 31px;
+}

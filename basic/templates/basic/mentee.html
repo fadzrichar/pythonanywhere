@@ -1,0 +1,31 @@
+    
+
+{% extends 'basic/base.html' %}
+
+{% block title %}Mentee{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <section class="mentee-content">
+        <div class="container align-items-center">
+            <div class="row align-items-center justify-content-center">
+                <h2>Our Mentee</h2>
+            </div>
+        </div>
+        {% for m in mentee %}
+        <div class="container mentee-content-first align-items-center content">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <img src = "{% static ''%}{{m.image_path}}" width="255px">
+                </div>
+                <div class="col-md-7">
+                    <h5>{{m.mentee_name}}</h5>
+                    <h6>{{m.mentee_testi}}</h6>
+                </div>
+                <div class="col-md-1"></div>    
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+{% endblock %}

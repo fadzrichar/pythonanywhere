@@ -1,0 +1,36 @@
+{% extends 'basic/base.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block menu %}Blog{% endblock %}
+
+{% block contactperson %}Contact Person : Email : academy@alphatech.id Mobile phone: 0877 9609 9530{% endblock %}
+
+{% block content %}
+{% load static %}
+    <div class="container input" >
+        <form action="{% url 'basic:save_content'%}" method="POST">
+            {% csrf_token %}
+            <div>
+                <p>
+                    <label for="img_path">Input Image URL:</label>
+                    <br>
+                    <input type="text" id="img_path" name="img_path" placeholder="img/image_address" required />
+                </p>
+                <p>
+                    <label for="blog_title">Input Title:</label>
+                    <br>
+                    <input type="text" id="blog_title" name="blog_title" placeholder="title example" required/>
+                </p>
+                <p>
+                    <label for="blog_content">Content Article:</label>
+                    <br>
+                    <textarea id="blog_content" name="blog_content" cols="50" rows="10" required></textarea>          
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Submit" />
+                </p>
+            </div>
+        </form>
+    </div>
+{% endblock %}

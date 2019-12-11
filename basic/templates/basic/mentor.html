@@ -1,0 +1,30 @@
+{% extends 'basic/base.html' %}
+
+{% block title %}Mentor{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <section>
+        <div class="container align-items-center">
+            <div class="row align-items-center justify-content-center">
+                <h2>Our Mentor</h2>
+            </div>
+        </div>
+        {% for m in mentor %}
+        <div class="container mentor-content-first align-items-center content">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div ><img src = "{% static ''%}{{m.image_path}}" ></div>
+                </div>
+                <div class="col-md-7">
+                    <h3 style="color: gray;">{{m.mentor_name}}</h3>
+                    <h5 style="color: blue;">{{m.mentor_exp}}</h5>
+                    <h6>{{m.mentor_testi}}</h6>
+                </div>
+                <div class="col-md-1"></div>    
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+{% endblock %}
