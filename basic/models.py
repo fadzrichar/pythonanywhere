@@ -7,7 +7,7 @@ class Blog(models.Model):
     image_path = models.CharField(max_length=255, default = None, blank = True)
     blog_title = models.CharField(max_length=255, default = None, blank = True)
     blog_content = models.TextField(max_length=2000, default = None, blank = True)
-    pub_date = models.DateField('date published', default = None, blank = True)
+    pub_date = models.DateField('date published', auto_now_add = True)
 
     def __str__(self):
         return self.blog_title

@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from .models import Blog, Mentee, Mentor
 from django.urls import reverse
@@ -31,11 +31,11 @@ def input_content(request):
     return render(request, 'basic/input_content.html', {})
 
 def save_content(request):
-    img_path = request.POST['img_path']
-    blog_title = request.POST['title']
+    image_path = request.POST['image_path']
+    blog_title = request.POST['blog_title']
     blog_content = request.POST['blog_content']
 
-    bl = Blog(img_path=img_path, blog_title = blog_title, blog_content=blog_content)
+    bl = Blog(image_path=image_path, blog_title=blog_title, blog_content=blog_content)
     bl.save()
     blog = Blog.objects.all()
     
