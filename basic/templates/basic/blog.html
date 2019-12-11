@@ -33,8 +33,8 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6 blog-content-third">
                     <h2>{{b.blog_title}}</h2>
-                    <p>{{b.blog_content}}</p>
-                    <h5><a href="#">Baca Selengkapnya</a></h5>
+                    <p>{{b.blog_content|truncatewords:20}}</p>
+                    <h5><a href="{% url 'basic:detail' b.id %}">Baca Selengkapnya</a></h5>
                 </div>
                 <div class="col-md-3"></div>
             </div>

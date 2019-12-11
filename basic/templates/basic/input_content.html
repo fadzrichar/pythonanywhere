@@ -8,29 +8,33 @@
 
 {% block content %}
 {% load static %}
-    <div class="container input" >
-        <form action="{% url 'basic:save_content'%}" method="POST">
-            {% csrf_token %}
-            <div>
-                <p>
-                    <label for="img_path">Input Image URL:</label>
-                    <br>
-                    <input type="text" id="img_path" name="img_path" placeholder="img/image_address" required />
-                </p>
-                <p>
-                    <label for="blog_title">Input Title:</label>
-                    <br>
-                    <input type="text" id="blog_title" name="blog_title" placeholder="title example" required/>
-                </p>
-                <p>
-                    <label for="blog_content">Content Article:</label>
-                    <br>
-                    <textarea id="blog_content" name="blog_content" cols="50" rows="10" required></textarea>          
-                </p>
-                <p>
-                    <input type="submit" name="submit" value="Submit" />
-                </p>
+    <div class="container-fluid input justify-content-center">
+        <div class = "row">
+            <div class = "col-md-12 justify-content-center">
+            <form action="{% url 'basic:save_content'%}" method="POST">
+                {% csrf_token %}
+                <div>
+                    <p>
+                        <label for="img_path">Input Image URL:</label>
+                        <br>
+                        <input type="text" id="img_path" name="img_path" placeholder="img/image_address" required />
+                    </p>
+                    <p>
+                        <label for="blog_title">Input Title:</label>
+                        <br>
+                        <input type="text" id="blog_title" name="blog_title" placeholder="title example" required/>
+                    </p>
+                    <p>
+                        <label for="blog_content">Content Article:</label>
+                        <br>
+                        <textarea id="blog_content" name="blog_content" cols="50" rows="10" required></textarea>          
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" value="Submit" />
+                    </p>
+                </div>
+            </form>
             </div>
-        </form>
+        </div>
     </div>
 {% endblock %}

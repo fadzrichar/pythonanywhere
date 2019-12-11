@@ -1,0 +1,40 @@
+{% extends 'basic/base.html' %}
+
+{% block title %}Detail{% endblock %}
+
+{% block menu %}Blog{% endblock %}
+
+{% block contactperson %}Contact Person : Email : academy@alphatech.id Mobile phone: 0877 9609 9530{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <section>
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-3"></div>
+                <div class = "col-md-6 blog-content-first">
+                    <img src ="{% static ''%}{{blog.image_path}}" width="630px">
+                </div>
+                <div class = "col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-2 blog-content-second">
+                    <span>{{blog.pub_date}}</span>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 blog-content-second text-right">
+                    <span>0 comment</span>
+                    </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 blog-content-third">
+                    <h2>{{blog.blog_title}}</h2>
+                    <p>{{blog.blog_content}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

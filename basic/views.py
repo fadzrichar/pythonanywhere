@@ -11,6 +11,11 @@ def blog(request):
     blog = Blog.objects.all()
     return render(request, 'basic/blog.html', {'blog': blog})
 
+def detail(request, blog_id):
+    blog = get_object_or_404(Blog, pk=blog_id)
+    return render(request, 'basic/detail.html', {'blog': blog})
+
+
 def mentor(request):
     mentor = Mentor.objects.all()
     return render(request, 'basic/mentor.html', {'mentor': mentor})
